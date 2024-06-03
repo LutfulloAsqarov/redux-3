@@ -16,14 +16,20 @@ const ProductItem = ({ product }) => {
             </Link>
             <h3>{product.title}</h3>
             <p>{product.description}</p>
-            <button onClick={() => dispatch(like(product))}>
+            <button
+                className="product__like-btn"
+                onClick={() => dispatch(like(product))}
+            >
                 {wishlistData.some((el) => el.id === product.id) ? (
                     <FaHeart color="crimson" />
                 ) : (
                     <FaRegHeart />
                 )}
             </button>
-            <button onClick={() => dispatch(add(product))}>
+            <button
+                className="product__add-btn"
+                onClick={() => dispatch(add(product))}
+            >
                 {cartData.some((el) => el.id === product.id) ? (
                     <span>Added</span>
                 ) : (
