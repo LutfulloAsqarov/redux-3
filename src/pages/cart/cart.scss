@@ -1,0 +1,87 @@
+.carts {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-gap: 30px;
+
+    &__left {
+        border: 1px solid #d1d1d1;
+        border-radius: 15px;
+        padding: 30px;
+        h2 {
+            padding-bottom: 30px;
+        }
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &__top {
+            border: 1px solid #d1d1d1;
+            padding: 20px;
+            border-radius: 15px;
+            p {
+                color: #a1a1a1e9;
+                padding-bottom: 10px;
+            }
+            form {
+                display: flex;
+                align-items: center;
+                input {
+                    padding: 8px;
+                    border: 1px solid #c6c5c5;
+                    border-radius: 5px 0 0 5px;
+                    color: #808080e6;
+                    background: #f3f3f3a4;
+                }
+                button {
+                    border: none;
+                    padding: 8px;
+                    border-top: 1px solid #c6c5c5;
+                    border-right: 1px solid #c6c5c5;
+                    border-bottom: 1px solid #c6c5c5;
+                    border-radius: 0px 5px 5px 0;
+                    background: transparent;
+                }
+            }
+        }
+        &__bottom {
+            border: 1px solid #d1d1d1;
+            border-radius: 15px;
+            padding: 30px;
+            color: gray;
+        }
+        &__price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__discount {
+            padding: 15px 0;
+            span {
+                color: #00c500;
+            }
+        }
+        &__total {
+            padding: 20px 0;
+            border-top: 1px solid #d1d1d1;
+        }
+        &__btns {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            button {
+                border: none;
+                padding: 10px 0;
+                border-radius: 5px;
+                font-size: 16px;
+                &:first-child {
+                    background: green;
+                    color: #fff;
+                }
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}

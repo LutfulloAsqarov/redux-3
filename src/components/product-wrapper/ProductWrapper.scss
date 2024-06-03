@@ -1,0 +1,28 @@
+.product__cards {
+    padding: 30px 0;
+}
+
+.product__wrapper {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+.product__item {
+    border: 1px solid #ddd;
+    padding: 14px;
+    p {
+        display: -webkit-box;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        margin: 10px 0;
+        color: #4c4c4c;
+    }
+}
+.product__item img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
